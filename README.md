@@ -1,4 +1,4 @@
-# portfolio
+# My personal website written in Vue.js
 
 ## Project setup
 ```
