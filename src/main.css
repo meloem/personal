@@ -1,0 +1,271 @@
+body {
+    margin: 0px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+    zoom: 0.9;
+  }
+  
+  .container {
+    width: 100%;
+    position: inherit;
+    padding-bottom: 60px;
+    background-color: white;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      height: 660px;
+      width: 100%;
+      top: 0%;
+      position: absolute;
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .presentation {
+      width: 160px;
+      height: 160px;
+      margin-left: auto;
+      margin-right: auto;
+      left: inherit;
+      position: initial;
+      margin-top: 4%;
+      transform: scale(1.2,1.2);
+    }
+  }
+  
+
+  
+  .switch {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    top: 5%;
+    left: 85%;
+  }
+  @media screen and (max-width: 480px) {
+    .switch {
+      width: 45px;
+      height: 24px;
+      top: 3%;
+      right: 5%;
+      left: inherit;
+    }
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+
+  
+  .active {
+    background-color: #22313F;
+  }
+  
+  .scroll {
+    width: 100%;
+    /*height: 7065px;*/
+    /*position: absolute;*/
+    background-color: #F4D03F;
+    /*top: 630px;*/
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .scroll {
+      width: 100%;
+      height: 1635px;
+      position: absolute;
+      background-color: #F4D03F;
+      top: 640px;
+    }
+  }
+  
+  .europe {
+    margin-top: 40px;
+    position: relative;
+    margin-bottom: 60px;
+    width: 85%;
+    max-width: 1300px;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+  
+  #breathing {
+      -webkit-animation: breathing 1s ease-out infinite normal;
+      animation: breathing 1s ease-out infinite normal;
+      text-align: center;
+      }
+  
+  
+  @-webkit-keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+
+  
+  .checkIfInView {
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+  }
+  
+  @-webkit-keyframes fade1 {
+    0% {
+      opacity: 0;
+    }
+    2.5% {
+      opacity: 1;
+    }
+    22.5% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes fade2 {
+    0% {
+      opacity: 0;
+    }
+    22.5% {
+      opacity: 0;
+    }
+    27.5% {
+      opacity: 1;
+    }
+    47.5% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes fade3 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    52.5% {
+      opacity: 1;
+    }
+    72.5% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes fade4 {
+    0% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    77.5% {
+      opacity: 1;
+    }
+    92.5% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .text-animated-1, .text-animated-2, .text-animated-3, .text-animated-4 {
+    display:inline;
+    position:absolute;
+  }
+  
+  .text-animated-1 {
+    -webkit-animation:fade1 12s infinite;
+    /*-webkit-animation-delay:3s;*/
+  }
+  
+  .text-animated-2{
+    opacity:0;
+    margin-top: 41px;
+    -webkit-animation:fade2 12s infinite;
+  }
+  
+  .text-animated-3{
+    opacity:0;
+    -webkit-animation:fade3 12s infinite;
+  }
+  
+  .text-animated-4{
+    opacity:0;
+    -webkit-animation:fade4 12s infinite;
+  }
+  
+  .cursorClick {
+    cursor: pointer;
+  }
+  
